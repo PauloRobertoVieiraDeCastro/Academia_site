@@ -1,0 +1,205 @@
+body,a, h1,h2,h3,h4,p,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	padding-top: 90px;
+}
+
+nav{
+    background-color: rgb(52, 52, 52);
+    color: white
+}
+
+nav img{
+    width: 100px;
+    height: 50px;
+}
+
+button.planos_botao{
+    background-color: crimson;
+    color: white;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button.botao_envio{
+    background-color: crimson;
+    color: white;
+    border-color: crimson;
+}
+
+button.cabecalho-pesquisa{
+    background-color: crimson;
+    color: white;
+    border-color: crimson;
+}
+
+button:hover{
+    background-color: #b52249;
+    cursor: pointer;
+}
+
+.btn-danger{
+    background-color: crimson;
+    color: white;
+    border-color: crimson;
+}
+
+
+
+img{
+	max-width: 100%;/*não estoura o limite da tela, mas nao perde resolução*/
+	display: block; /*as imagens nunca alinham, sempre ficam como bloco (em cima da outra tag)*/
+	
+}
+
+.sizing{
+    padding-top: -100px;
+}
+
+.carousel-item {
+    height: 600px;
+}
+  
+.introducao1{
+    width: 100%;
+    background:
+          /* top, transparent black, faked with gradient */ 
+          
+          /* bottom, image */
+          linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.4)
+          ),
+          url(../img/homem-fazendo-flexao.jpg);
+    /*background: url(../img/limp_pred.jpg); /*o 2 pontos indica que voltou um diretório*/
+    background-size: cover;
+    height: 500px;
+    opacity: 1;
+    text-align: center;
+}
+
+.introducao2{
+    width: 100%;
+    background:
+          /* top, transparent black, faked with gradient */ 
+          linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.4)
+          ),
+          url(../img/academia.jpg);
+    /*background: url(../img/limp_pred.jpg); /*o 2 pontos indica que voltou um diretório*/
+    background-size: cover;
+    height: 500px;
+    text-align: left;
+  }
+
+  .introducao3{
+    width: 100%;
+    background:
+          /* top, transparent black, faked with gradient */ 
+          linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.4)
+          ),
+          /* bottom, image */
+          url(../img/mulher-fazendo-ioga.jpg);
+    /*background: url(../img/limp_pred.jpg); /*o 2 pontos indica que voltou um diretório*/
+    background-size: cover;
+    height: 500px;
+    
+    text-align: center;
+  }
+
+  .treino_func{
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    margin: 0 auto;
+    transition: width 0.5s, height 0.5s;
+  }
+
+  .treino_func:hover{
+    width: 200px;
+    height: 200px;
+  }
+
+  .texto{
+    font-size: 0.9em;
+  }
+
+  #quote{
+    background:
+       /* top, transparent black, faked with gradient */ 
+       linear-gradient(
+         rgba(0, 0, 0, 0.3), 
+         rgba(0, 0, 0, 0.3)
+       ),
+        url('../img/trilha.jpg') center center;
+   background-size: cover;
+   min-height: 350px;
+ 
+    /* defina o background como fixo e posicione a imagem */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(min-width: 760px){
+    .quote-block{
+        vertical-align: middle;
+        padding-top: 70px;
+    }
+}
+
+@media(max-width: 760px){
+    .quote-block{
+        vertical-align: middle;
+        padding-top: 30px;
+    }
+}
+
+.palavra{
+    font-size: 1.3em;
+    vertical-align: middle;
+    top: 50%;
+    margin: 0 auto;
+}
+
+.plano_titulo{
+    color: gray
+}
+
+ul{
+    list-style: none;
+}
+
+#quote-segundo{
+    background:
+       /* top, transparent black, faked with gradient */ 
+       linear-gradient(
+         rgba(0, 0, 0, 0.3), 
+         rgba(0, 0, 0, 0.3)
+       ),
+        url('../img/treino-praia.jpg') center center;
+        min-height: 350px;
+        max-width: 100%;
+ 
+        /* defina o background como fixo e posicione a imagem */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.observacao{
+    font-size: 0.8em;
+}
+
+footer{
+    color: white
+}
